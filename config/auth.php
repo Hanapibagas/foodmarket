@@ -108,4 +108,10 @@ return [
 
     'password_timeout' => 10800,
 
+
+    'api' => [
+        'driver' => 'sanctum',
+        'provider' => 'users',
+    ],
+
 ];
