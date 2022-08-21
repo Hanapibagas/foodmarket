@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('houseNumber')->nullable();
             $table->string('phoneNumber')->nullable();
             $table->string('city')->nullable();
-            $table->string('roles')->default('USER');
+            $table->enum('roles', ['USER', 'ADMIN']);
             $table->timestamps();
         });
     }
